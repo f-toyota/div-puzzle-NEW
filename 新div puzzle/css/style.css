@@ -1,9 +1,7 @@
 @charset "utf-8";
 
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
+.flex-list{
+	display:flex;
 }
 
 .red {
@@ -16,12 +14,23 @@ position: relative;
 .white {
 background: #ffffff;
 position: absolute;
-top: 20px; 
-right: 20px; 
-padding:10px
+top: 20px;
+right: 20px;
+padding:10px;
+width: 140px;	
+height:40px;
 }
 
-
+.purple {
+float: left;
+width: 40px;
+height: 40px;
+background: #6729a0;
+margin-right:10px;
+}
+.purple:nth-last-child(1){
+margin-right: 0
+}
 
 .green {
 float: left;
@@ -44,33 +53,22 @@ height: 100px;
 background:  #fd0;
 }
 
-.purple {
-float: left;
-width: 40px;
+.orange {
+width: 140px;
 height: 40px;
-background: #6729a0;
-margin-right:10px;
+background: #ff863f;
+margin: 5px 0 0 5px
 }
-.purple:nth-last-child(1){
-margin-right: 0
-}
-
-	.orange {
-		width: 140px;
-		height: 40px;
-		background: #ff863f;
-		margin: 5px 0 0 5px
-		}
 	
-.orange--1 {
+.white-2 {
 float: left;
 width: 150px;
 height: 50px;
 background: #ffffff;
-
 margin: 10px 0 0 40px
 }
 
 .orange--1:nth-last-child(3){
-	margin: 40px 0 0 40px
-	}
+margin: 40px 0 0 40px
+}
+
